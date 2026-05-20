@@ -1,0 +1,9 @@
+{
+  "name": "filing-monitor",
+  "version": "0.0.1",
+  "description": "公告监控 - 监管函、问询函、立案、重大事项扫描",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

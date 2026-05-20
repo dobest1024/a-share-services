@@ -1,0 +1,9 @@
+{
+  "name": "policy-analyst",
+  "version": "0.0.1",
+  "description": "政策分析 - 政策文件 → 受益主题与行业映射",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

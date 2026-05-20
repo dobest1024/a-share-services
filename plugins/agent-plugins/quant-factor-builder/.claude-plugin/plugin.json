@@ -1,0 +1,9 @@
+{
+  "name": "quant-factor-builder",
+  "version": "0.0.1",
+  "description": "量化因子构造与回测",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

@@ -1,0 +1,21 @@
+name: policy-analyst
+description: 政策分析 - 政策 → 受益主题与行业映射
+system:
+  file: ../../plugins/agent-plugins/policy-analyst/agents/policy-analyst.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/policy-analyst/skills/policy-parser
+- path: ../../plugins/agent-plugins/policy-analyst/skills/theme-mapping
+- path: ../../plugins/agent-plugins/policy-analyst/skills/policy-calendar
+- path: ../../plugins/agent-plugins/policy-analyst/skills/industry-classification
+mcp_servers:
+- name: cninfo
+  command: python3
+  args:
+  - ../../data-providers/cninfo-mcp/server.py
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+callable_agents: []
+security_tier: T2

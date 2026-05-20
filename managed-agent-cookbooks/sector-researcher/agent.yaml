@@ -1,0 +1,22 @@
+name: sector-researcher
+description: 行业研究 - 申万行业 + 政策维度
+system:
+  file: ../../plugins/agent-plugins/sector-researcher/agents/sector-researcher.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/sector-researcher/skills/sector-overview
+- path: ../../plugins/agent-plugins/sector-researcher/skills/policy-parser
+- path: ../../plugins/agent-plugins/sector-researcher/skills/theme-mapping
+- path: ../../plugins/agent-plugins/sector-researcher/skills/industry-classification
+- path: ../../plugins/agent-plugins/sector-researcher/skills/comps-analysis
+mcp_servers:
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+- name: tushare
+  command: python3
+  args:
+  - ../../data-providers/tushare-mcp/server.py
+callable_agents: []
+security_tier: T2

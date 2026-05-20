@@ -1,0 +1,9 @@
+{
+  "name": "sell-side-research",
+  "version": "0.0.1",
+  "description": "卖方研究工作流：季报/中报/年报分析、首推报告、模型更新、晨会纪要、行业综述、催化剂跟踪",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

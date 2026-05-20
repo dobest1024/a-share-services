@@ -1,0 +1,44 @@
+# 政策主题 → 受益行业/概念映射（Phase 0 占位，Phase 2 由 policy-analyst agent 持续维护）
+#
+# 用法：policy-parser skill 抽取政策文件关键词后，按此表映射受益方向。
+# 维护原则：主题词必须出现在权威政策文件中（国务院 / 央行 / 证监会 / 发改委 / 工信部），
+#           受益行业按申万一级标注。
+
+themes:
+  - name: 新质生产力
+    keywords: [新质生产力, 战略性新兴产业, 未来产业]
+    beneficiary_industries:
+      - 申万: 电子
+      - 申万: 计算机
+      - 申万: 国防军工
+      - 申万: 机械设备
+    source_examples:
+      - 2024 政府工作报告
+
+  - name: 中特估
+    keywords: [中国特色估值体系, 央国企估值, 价值重估]
+    beneficiary_industries:
+      - 申万: 银行
+      - 申万: 建筑装饰
+      - 申万: 石油石化
+      - 申万: 公用事业
+    source_examples:
+      - 2022 证监会主席讲话
+
+  - name: 专精特新
+    keywords: [专精特新, 小巨人, 单项冠军]
+    beneficiary_industries:
+      - 申万: 机械设备
+      - 申万: 电子
+      - 申万: 基础化工
+    source_examples:
+      - 工信部专精特新企业认定文件
+
+  - name: 双碳
+    keywords: [碳达峰, 碳中和, 新能源]
+    beneficiary_industries:
+      - 申万: 电力设备
+      - 申万: 公用事业
+      - 申万: 有色金属
+    source_examples:
+      - 2030 碳达峰行动方案

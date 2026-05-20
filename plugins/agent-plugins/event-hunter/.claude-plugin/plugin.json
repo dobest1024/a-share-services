@@ -1,0 +1,9 @@
+{
+  "name": "event-hunter",
+  "version": "0.0.1",
+  "description": "事件驱动 - 龙虎榜、北向资金、解禁、异动综合扫描",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "stock-researcher",
+  "version": "0.0.1",
+  "description": "个股研究 - 季报/中报/年报联动业绩预告/快报，输出研究框架与关键问题",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

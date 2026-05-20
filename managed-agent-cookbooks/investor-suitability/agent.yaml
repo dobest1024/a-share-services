@@ -1,0 +1,12 @@
+name: investor-suitability
+description: 投资者适当性管理辅助
+system:
+  file: ../../plugins/agent-plugins/investor-suitability/agents/investor-suitability.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/investor-suitability/skills/client-profiling
+- path: ../../plugins/agent-plugins/investor-suitability/skills/suitability-check
+- path: ../../plugins/agent-plugins/investor-suitability/skills/investor-suitability
+mcp_servers: []
+callable_agents: []
+security_tier: T3

@@ -1,0 +1,19 @@
+name: advisor-meeting-prep
+description: 投顾客户会议简报（持牌投顾使用）
+system:
+  file: ../../plugins/agent-plugins/advisor-meeting-prep/agents/advisor-meeting-prep.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/advisor-meeting-prep/skills/client-profiling
+- path: ../../plugins/agent-plugins/advisor-meeting-prep/skills/suitability-check
+- path: ../../plugins/agent-plugins/advisor-meeting-prep/skills/allocation-framework
+- path: ../../plugins/agent-plugins/advisor-meeting-prep/skills/dca-strategy
+- path: ../../plugins/agent-plugins/advisor-meeting-prep/skills/monthly-recap
+- path: ../../plugins/agent-plugins/advisor-meeting-prep/skills/investor-suitability
+mcp_servers:
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+callable_agents: []
+security_tier: T3

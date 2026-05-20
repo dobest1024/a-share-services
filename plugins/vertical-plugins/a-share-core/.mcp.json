@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "akshare": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["${PLUGIN_DIR}/../../../data-providers/akshare-mcp/server.py"]
+    },
+    "tushare": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["${PLUGIN_DIR}/../../../data-providers/tushare-mcp/server.py"],
+      "env": {
+        "TUSHARE_TOKEN": "${TUSHARE_TOKEN}"
+      }
+    },
+    "cninfo": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["${PLUGIN_DIR}/../../../data-providers/cninfo-mcp/server.py"]
+    }
+  }
+}

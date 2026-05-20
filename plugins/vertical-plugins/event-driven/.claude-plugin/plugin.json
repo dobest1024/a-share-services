@@ -1,0 +1,9 @@
+{
+  "name": "event-driven",
+  "version": "0.0.1",
+  "description": "事件驱动分析：龙虎榜、北向资金、融资融券、大宗交易、解禁、监管函、业绩预告、涨跌停复盘",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

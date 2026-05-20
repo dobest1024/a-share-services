@@ -1,0 +1,9 @@
+{
+  "name": "buy-side-pm",
+  "version": "0.0.1",
+  "description": "买方基金经理工作流：多因子选股、组合构建、风险归因、公司调研纪要、投资决策备忘",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

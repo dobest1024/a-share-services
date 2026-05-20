@@ -1,0 +1,9 @@
+{
+  "name": "sector-researcher",
+  "version": "0.0.1",
+  "description": "行业研究 - 申万行业 + 政策维度，输出行业综述与关键观察点",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "investor-suitability",
+  "version": "0.0.1",
+  "description": "投资者适当性匹配 - A 股口径",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "retail-advisory",
+  "version": "0.0.1",
+  "description": "投资顾问工作流（持牌机构使用）：客户画像、适当性匹配、资产配置框架、定投策略、月度市场综述",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

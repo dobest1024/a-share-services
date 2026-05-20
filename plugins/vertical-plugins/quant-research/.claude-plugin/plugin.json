@@ -1,0 +1,9 @@
+{
+  "name": "quant-research",
+  "version": "0.0.1",
+  "description": "量化研究：因子库、单因子检验、因子合成、回测框架对接、事件研究法",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

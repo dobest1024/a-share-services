@@ -1,0 +1,9 @@
+{
+  "name": "nav-pricer",
+  "version": "0.0.1",
+  "description": "公募/私募净值核算与估值复核",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

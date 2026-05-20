@@ -1,0 +1,4 @@
+sw_l1_code,sw_l1_name,sw_l2_code,sw_l2_name,sw_l3_code,sw_l3_name,citic_l1,csrc_code,csrc_name,gics_sector
+# 申万 ↔ 中信 ↔ 证监会 ↔ GICS 行业分类映射表（Phase 0 占位 schema，Phase 1 填实）
+# 数据来源：申万 https://www.swhyresearch.com/  中信  http://csi.com.cn  证监会 http://www.csrc.gov.cn
+# 按季度更新；以申万一级行业为主对外口径。

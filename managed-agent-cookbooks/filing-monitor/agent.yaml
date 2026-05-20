@@ -1,0 +1,21 @@
+name: filing-monitor
+description: 公告与监管文书监控
+system:
+  file: ../../plugins/agent-plugins/filing-monitor/agents/filing-monitor.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/filing-monitor/skills/regulatory-letter
+- path: ../../plugins/agent-plugins/filing-monitor/skills/corporate-action
+- path: ../../plugins/agent-plugins/filing-monitor/skills/earnings-preview-radar
+- path: ../../plugins/agent-plugins/filing-monitor/skills/financial-quality-check
+mcp_servers:
+- name: cninfo
+  command: python3
+  args:
+  - ../../data-providers/cninfo-mcp/server.py
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+callable_agents: []
+security_tier: T2

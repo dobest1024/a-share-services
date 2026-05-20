@@ -1,0 +1,26 @@
+name: event-hunter
+description: 事件驱动综合扫描
+system:
+  file: ../../plugins/agent-plugins/event-hunter/agents/event-hunter.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/event-hunter/skills/dragon-tiger-list
+- path: ../../plugins/agent-plugins/event-hunter/skills/northbound-flow
+- path: ../../plugins/agent-plugins/event-hunter/skills/margin-trading
+- path: ../../plugins/agent-plugins/event-hunter/skills/block-trade
+- path: ../../plugins/agent-plugins/event-hunter/skills/unlock-calendar
+- path: ../../plugins/agent-plugins/event-hunter/skills/regulatory-letter
+- path: ../../plugins/agent-plugins/event-hunter/skills/earnings-preview-radar
+- path: ../../plugins/agent-plugins/event-hunter/skills/corporate-action
+- path: ../../plugins/agent-plugins/event-hunter/skills/limit-up-down-analysis
+mcp_servers:
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+- name: cninfo
+  command: python3
+  args:
+  - ../../data-providers/cninfo-mcp/server.py
+callable_agents: []
+security_tier: T2

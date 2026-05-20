@@ -1,0 +1,9 @@
+{
+  "name": "irm-watcher",
+  "version": "0.0.1",
+  "description": "投资者互动平台监控 - 上证 e 互动 / 深交所互动易",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

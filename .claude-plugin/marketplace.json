@@ -1,0 +1,109 @@
+{
+  "name": "claude-for-a-share",
+  "owner": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  },
+  "plugins": [
+    {
+      "name": "a-share-core",
+      "source": "./plugins/vertical-plugins/a-share-core",
+      "description": "核心数据连接器与基础分析能力 - akshare/Tushare/cninfo MCP、估值（DCF/PB-ROE/股息）、CAS 三表、申万行业分类、A 股市场规则手册"
+    },
+    {
+      "name": "sell-side-research",
+      "source": "./plugins/vertical-plugins/sell-side-research",
+      "description": "卖方研究工作流：季报/中报/年报分析、首推报告、模型更新、晨会纪要、行业综述、催化剂跟踪"
+    },
+    {
+      "name": "buy-side-pm",
+      "source": "./plugins/vertical-plugins/buy-side-pm",
+      "description": "买方基金经理工作流：多因子选股、组合构建、风险归因、公司调研纪要、投资决策备忘"
+    },
+    {
+      "name": "quant-research",
+      "source": "./plugins/vertical-plugins/quant-research",
+      "description": "量化研究：因子库、单因子检验、因子合成、回测框架对接、事件研究法"
+    },
+    {
+      "name": "event-driven",
+      "source": "./plugins/vertical-plugins/event-driven",
+      "description": "事件驱动分析：龙虎榜、北向资金、融资融券、大宗交易、解禁、监管函、业绩预告、涨跌停复盘"
+    },
+    {
+      "name": "policy-themes",
+      "source": "./plugins/vertical-plugins/policy-themes",
+      "description": "政策与主题研究：政策文件解读、主题映射（新质生产力/中特估/专精特新/双碳）、政策日历"
+    },
+    {
+      "name": "retail-advisory",
+      "source": "./plugins/vertical-plugins/retail-advisory",
+      "description": "投资顾问工作流（持牌机构使用）：客户画像、适当性匹配、资产配置框架、定投策略、月度市场综述"
+    },
+    {
+      "name": "nav-ops",
+      "source": "./plugins/vertical-plugins/nav-ops",
+      "description": "公募/私募净值核算与估值复核基础能力"
+    },
+    {
+      "name": "compliance-ops",
+      "source": "./plugins/vertical-plugins/compliance-ops",
+      "description": "投资者适当性、反洗钱（人行口径）合规支撑"
+    },
+    {
+      "name": "stock-researcher",
+      "source": "./plugins/agent-plugins/stock-researcher",
+      "description": "个股研究 agent - 季报/中报/年报联动业绩预告/快报，生成研究框架与关键问题"
+    },
+    {
+      "name": "sector-researcher",
+      "source": "./plugins/agent-plugins/sector-researcher",
+      "description": "行业研究 agent - 申万行业 + 政策维度，输出行业综述与关键观察点"
+    },
+    {
+      "name": "morning-meeting-host",
+      "source": "./plugins/agent-plugins/morning-meeting-host",
+      "description": "晨会纪要 agent - 卖方/买方两个版本"
+    },
+    {
+      "name": "event-hunter",
+      "source": "./plugins/agent-plugins/event-hunter",
+      "description": "事件驱动 agent - 龙虎榜、北向资金、解禁、异动综合扫描"
+    },
+    {
+      "name": "policy-analyst",
+      "source": "./plugins/agent-plugins/policy-analyst",
+      "description": "政策分析 agent - 政策文件 → 受益主题与行业映射"
+    },
+    {
+      "name": "filing-monitor",
+      "source": "./plugins/agent-plugins/filing-monitor",
+      "description": "公告监控 agent - 监管函、问询函、立案、重大事项扫描"
+    },
+    {
+      "name": "irm-watcher",
+      "source": "./plugins/agent-plugins/irm-watcher",
+      "description": "投资者互动平台监控 agent - 上证 e 互动 / 深交所互动易"
+    },
+    {
+      "name": "quant-factor-builder",
+      "source": "./plugins/agent-plugins/quant-factor-builder",
+      "description": "量化因子构造与回测 agent"
+    },
+    {
+      "name": "nav-pricer",
+      "source": "./plugins/agent-plugins/nav-pricer",
+      "description": "公募/私募净值核算与估值复核 agent"
+    },
+    {
+      "name": "advisor-meeting-prep",
+      "source": "./plugins/agent-plugins/advisor-meeting-prep",
+      "description": "投顾客户会议简报 agent（持牌投顾使用）"
+    },
+    {
+      "name": "investor-suitability",
+      "source": "./plugins/agent-plugins/investor-suitability",
+      "description": "投资者适当性 agent - A 股口径"
+    }
+  ]
+}

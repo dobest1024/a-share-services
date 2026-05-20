@@ -1,0 +1,24 @@
+name: nav-pricer
+description: 净值核算与估值复核
+system:
+  file: ../../plugins/agent-plugins/nav-pricer/agents/nav-pricer.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/nav-pricer/skills/nav-calculation
+- path: ../../plugins/agent-plugins/nav-pricer/skills/valuation-review
+- path: ../../plugins/agent-plugins/nav-pricer/skills/market-rules-handbook
+mcp_servers:
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+- name: tushare
+  command: python3
+  args:
+  - ../../data-providers/tushare-mcp/server.py
+- name: cninfo
+  command: python3
+  args:
+  - ../../data-providers/cninfo-mcp/server.py
+callable_agents: []
+security_tier: T3

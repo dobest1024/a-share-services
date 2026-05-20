@@ -1,0 +1,32 @@
+# Stock Researcher · Managed Agent 部署模板（Phase 0 骨架）
+#
+# 与 Cowork 插件共享同一份系统 prompt（agents/stock-researcher.md）。
+# 部署：
+#     export ANTHROPIC_API_KEY=sk-ant-...
+#     export TUSHARE_TOKEN=...
+#     ../../scripts/deploy-managed-agent.sh stock-researcher
+
+name: stock-researcher
+description: A 股个股研究 agent - 季报/中报/年报联动业绩预告/快报
+
+system:
+  file: ../../plugins/agent-plugins/stock-researcher/agents/stock-researcher.md
+
+model: claude-opus-4-7
+
+skills:
+  # Phase 1 由 sync-agent-skills.py 同步进 agent-plugin 后，在此引用
+  # - path: ../../plugins/agent-plugins/stock-researcher/skills/financial-quality-check
+  # - path: ../../plugins/agent-plugins/stock-researcher/skills/industry-classification
+  []
+
+mcp_servers:
+  - name: akshare
+    command: python3
+    args: [../../data-providers/akshare-mcp/server.py]
+  # tushare / cninfo 视部署环境启用
+
+callable_agents: []
+
+# 合规等级：T2 — 输出前需人工复核，禁止直接面向终端客户
+security_tier: T2

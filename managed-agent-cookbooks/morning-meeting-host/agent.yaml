@@ -1,0 +1,21 @@
+name: morning-meeting-host
+description: 晨会纪要 - 卖方/买方两版
+system:
+  file: ../../plugins/agent-plugins/morning-meeting-host/agents/morning-meeting-host.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/morning-meeting-host/skills/morning-note
+- path: ../../plugins/agent-plugins/morning-meeting-host/skills/catalyst-calendar
+- path: ../../plugins/agent-plugins/morning-meeting-host/skills/dragon-tiger-list
+- path: ../../plugins/agent-plugins/morning-meeting-host/skills/northbound-flow
+mcp_servers:
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+- name: tushare
+  command: python3
+  args:
+  - ../../data-providers/tushare-mcp/server.py
+callable_agents: []
+security_tier: T2

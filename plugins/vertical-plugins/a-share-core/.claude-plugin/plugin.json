@@ -1,0 +1,9 @@
+{
+  "name": "a-share-core",
+  "version": "0.0.1",
+  "description": "核心数据连接器与基础分析能力 - akshare/Tushare/cninfo MCP、估值（DCF/PB-ROE/股息）、CAS 三表、申万行业分类、A 股市场规则手册",
+  "author": {
+    "name": "dobest1024",
+    "url": "https://github.com/dobest1024/a-share-services"
+  }
+}

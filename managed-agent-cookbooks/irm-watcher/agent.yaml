@@ -1,0 +1,13 @@
+name: irm-watcher
+description: 投资者互动平台监控
+system:
+  file: ../../plugins/agent-plugins/irm-watcher/agents/irm-watcher.md
+model: claude-opus-4-7
+skills: []
+mcp_servers:
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+callable_agents: []
+security_tier: T2

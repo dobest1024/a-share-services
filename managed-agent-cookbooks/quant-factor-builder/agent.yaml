@@ -1,0 +1,22 @@
+name: quant-factor-builder
+description: 量化因子构造与回测
+system:
+  file: ../../plugins/agent-plugins/quant-factor-builder/agents/quant-factor-builder.md
+model: claude-opus-4-7
+skills:
+- path: ../../plugins/agent-plugins/quant-factor-builder/skills/factor-library
+- path: ../../plugins/agent-plugins/quant-factor-builder/skills/single-factor-test
+- path: ../../plugins/agent-plugins/quant-factor-builder/skills/factor-combination
+- path: ../../plugins/agent-plugins/quant-factor-builder/skills/backtest-adapter
+- path: ../../plugins/agent-plugins/quant-factor-builder/skills/event-study
+mcp_servers:
+- name: tushare
+  command: python3
+  args:
+  - ../../data-providers/tushare-mcp/server.py
+- name: akshare
+  command: python3
+  args:
+  - ../../data-providers/akshare-mcp/server.py
+callable_agents: []
+security_tier: T3
